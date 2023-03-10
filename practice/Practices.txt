@@ -1,0 +1,3 @@
+Practice01
+Create your first terraform files. Create in this folder a subdirectory with name "Practice01".
+Create then all files that we need for a first and minimal version that can be execute with terraform. 
