@@ -46,3 +46,45 @@ Practice06
 Create a new folder in your practice folder with name "Practice06" and copy your files from Practice05 into it.
 Create a variables.tf and create a variable with name test_variable. Use the variable as your name of the ressource group.
 Execute the plan and apply it with the value "test_{your name}"
+
+Practice07
+Work as a team.
+Create a new folder in your practice folder with name "Practice07"
+Create a User in our AzureAD. Use the azuread provider for the user creation and the random provider to generate a password
+The name of the user should be {yourname}user. The service principal name should be user_principal_name = "{yourname}user.@snfterraformcourse.onmicrosoft.com"
+How you start ? 
+
+Practice08
+Create a new folder in your practice folder with name "Practice08" and copy the files from practice07
+Create a key vault and set up that you have permission to get, set, list Secrets. Also get the data for the azure ad user daniel.hasselwander_ti8m.ch#EXT#@snfterraformcourse.onmicrosoft.com and "jean-francois.ageneau_snf.ch#EXT#@snfterraformcourse.onmicrosoft.com"
+and setup also a key vault access policy to get, set list secrets in your key vault
+because the KeyVault Name must be unique in Azure use the random string provider to create a name for key vault like "examplekeyvault${random_string.name.result}"
+
+Practice09
+Destroy and remove all of your terraform managed infrastructure.
+Which cli command do you use ? Search in the documentation
+
+Practice10
+Create a ressource group in the portal. The name should be "manual_test_rg". Location should be switzerlandnorth.
+Import the ressource group with a cli command to your terraform state.
+Check if the state is updated and the ressource group are now a part of the state
+
+Practice11
+Include a second azurerm provider with subscription_id = "6d7a3341-6e8e-4beb-9800-ca14db2d409a" name it "general"
+Create a ressource group with your own subscription azurerm provider. The name should be "manual_test_rg. Location should be switzerlandnorth.
+Create a second ressource group with the second subscription azurerm provider. The name should be "manual_test_rg_yourname ". Location should be switzerlandnorth.
+Destroy everything.
+
+Practice12
+Include a second azurerm provider with subscription_id = "6d7a3341-6e8e-4beb-9800-ca14db2d409a" name it "general"
+Create a ressource group with your own subscription azurerm provider. The name should be "manual_test_rg. Location should be switzerlandnorth.
+Create a vnet in this ressource group. Name it "vnet_example". With the adress space ["10.1.0.0/16"]
+Get the information of the vnet with the name should be testing_vnet_everyone with the general provider. It is in the ressource group vnet_tests
+Create a vnet peering for both. Ressource azurerm_virtual_network_peering
+
+Practice13
+Create everything what you need for a Azure SQL Azure Managed Database on smallest possible instance.
+Use the random provider to create a user name and a password for the admin. 
+Store the password and the user in a new created key vault. 
+use the doku
+ 
