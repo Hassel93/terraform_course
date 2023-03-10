@@ -4,20 +4,24 @@ Create then all files that we need for a first and minimal version that can be e
 Use local for your backend (https://developer.hashicorp.com/terraform/language/settings/backends/local) 
 and the path for your backend should be terraform.tfstate 
 
-Practice02
-Now we start with azure and setup our azure subscriptions. 
+Practice02a
+Now we start with azure and setup our azure subscriptions.
 Look at subscriptions.txt and copy your subscription id.
-Create a ressource group in your subscription with name tf_state_{yourname}.
-Create a storage account with name tfstateterraform{yourname}.
-Create a blob storage container inside this storage account with name state
-
 Now install azure cli https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli
+Login to our tenant az login --tenant aab86598-da5a-4ebc-aab1-7a630e2ad212 and login.
 Change your Subscription that is set to your account. Command az account set -s {SubscriptionID}
+Create all resources that we need for a state that is saved in azure.
+Create a resource group in your subscription with name tf_state_{yourname}.
+Create a storage account with name tfstateterraform{yourname}.
+Create a blob storage container inside this storage account with name state.
+
+Practice02
 Create a new folder in your practice folder with name "Practice02". 
 Create a minimal version that can be execute with terraform and the 
 backend azurerm (https://developer.hashicorp.com/terraform/language/settings/backends/azurerm)
-Use your your created Ressource Group, Sotrage Account and Container for your Backend Settings.
+Use your your created Resource Group, Storage Account and Container for your Backend Settings.
 For the setting with name key use terraform.tfstate as its value
 
 After you did this make the steps that you need to apply a first run
+After your first apply look in your blob storage container. What did you see?
 
