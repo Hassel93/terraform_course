@@ -16,7 +16,7 @@ Create a storage account with name tfstateterraform{yourname}.
 Create a blob storage container inside this storage account with name state.
 
 Practice02
-Create a new folder in your practice folder with name "Practice02". 
+Create a new folder in your practice folder with name "Practice02"
 Create a minimal version that can be execute with terraform and the 
 backend azurerm (https://developer.hashicorp.com/terraform/language/settings/backends/azurerm)
 Use your your created Resource Group, Storage Account and Container for your Backend Settings.
@@ -25,3 +25,24 @@ For the setting with name key use terraform.tfstate as its value
 After you did this make the steps that you need to apply a first run
 After your first apply look in your blob storage container. What did you see?
 
+Practice03
+Create a new folder in your practice folder with name "Practice03" and copy your files from Practice02 into it.
+Integrate the azurerm provider to your provider.tf
+Tip: What is the first step after change or integrate a provider ?
+
+Practice04
+Create a new folder in your practice folder with name "Practice04" and copy your files from Practice03 into it.
+Create a resource group with the name "terraformcourse" in your subscription. Location should be "switzerlandnorth"
+Apply your new files and execute your changes. Check if your ressource group is available in your subscription.
+
+Practice05
+Create a new folder in your practice folder with name "Practice05" and copy your files from Practice04 into it.
+Create a storage account with name stoterraform{your name} and use a attribute references for location and resource group name to your Resource Group.
+If it is available, comment out (Set a # at the start of a line) everything in the file and execute your files again. 
+Everything in your subscription should be deleted except the state resources. 
+If you will you can remove the comments and see the magic of terraform.
+
+Practice06
+Create a new folder in your practice folder with name "Practice06" and copy your files from Practice05 into it.
+Create a variables.tf and create a variable with name test_variable. Use the variable as your name of the ressource group.
+Execute the plan and apply it with the value "test_{your name}"
