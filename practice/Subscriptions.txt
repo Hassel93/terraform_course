@@ -3,5 +3,5 @@ Azure Subscription OR203782	ef9d737c-6fc1-4014-8113-dd63980fa753	Patrick
 Azure Subscription OR203787	2a9894c1-49b8-4af8-ab69-f5780705054d	Martin
 Azure Subscription OR203790	09f1b151-ce0e-4e10-9b2c-4a041eb5bcb4	JF
 Azure Subscription OR203796	1b98e000-a64d-4ba6-8ec6-57a26af5c8b6	Sebastien
-Azure Subscription OR203801	6d7a3341-6e8e-4beb-9800-ca14db2d409a	Michael/Daniel
+Azure Subscription OR203801	6d7a3341-6e8e-4beb-9800-ca14db2d409a	Daniel
 Azure Subscription OR203804	5b778727-941a-45ad-90e6-8d645d3cb5aa	Jo

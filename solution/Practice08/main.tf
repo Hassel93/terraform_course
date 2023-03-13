@@ -4,8 +4,8 @@ resource "azurerm_resource_group" "rg_example" {
 }
 
 resource "random_string" "name" {
-  length           = 5
-  special          = false
+  length  = 5
+  special = false
 }
 
 resource "random_password" "pw" {
@@ -23,7 +23,7 @@ resource "azuread_user" "admin" {
 
 data "azurerm_client_config" "current" {}
 
-data "azuread_user" "jf"{
+data "azuread_user" "jf" {
   user_principal_name = "jean-francois.ageneau_snf.ch#EXT#@snfterraformcourse.onmicrosoft.com"
 }
 
