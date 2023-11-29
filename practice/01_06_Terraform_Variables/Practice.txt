@@ -1,0 +1,12 @@
+1. Configure the providers.tf with your azure state
+   Integrate the azurerm provider to your provider.tf and use the working subscription
+   Tip: What is the first step after the change or the integration a provider ?
+
+2.
+   Create a resource group with the name "terraformcourse{surname}" in your subscription. Location should be "switzerlandnorth"
+   Apply your new files and execute your changes. 
+   Check if your ressource group is available in your subscription
+   
+   
+3. 
+Add a storage account with name stoterraform{surname} and use a attribute references for location and resource group name to your Resource Group
