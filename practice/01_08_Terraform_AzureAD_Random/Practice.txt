@@ -1,0 +1,8 @@
+1.Create a new folder in your practice folder with name "Practice07"
+Create a User in our AzureAD. Use the azuread provider for the user creation and the random provider to generate a password
+The name of the user should be {yourname}user. The service principal name should be user_principal_name = "{yourname}user.@snfterraformcourse.onmicrosoft.com"
+
+
+Create a key vault and get the data for the azure ad user Daniel.Hasselwander_ti8m.ch#EXT#@ti8mschool.onmicrosoft.com
+and setup also a key vault access policy to get, set list secrets in your key vault
+because the KeyVault Name must be unique in Azure use the random string provider to create a name for key vault like "examplekeyvault${random_string.name.result}"

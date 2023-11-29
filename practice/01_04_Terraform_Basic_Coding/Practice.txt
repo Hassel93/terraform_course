@@ -1,0 +1,16 @@
+1. Implement the local backend provider and use the relative path "./terraform.tfstate"
+
+
+2.a
+Login in the azure portal and do the tasks:
+- Important: Write your name without special chars and use lowercase
+- Create a resource group in your subscription with name rg_state_{surname}.
+- Create a storage account with name tfstateterraform{surname}.
+- Create a blob storage container inside this storage account with name state.
+
+2.b 
+Implement the azure backend provider in the terraform code of practice 2 with your state
+
+
+3.
+After your first apply look in your blob storage container. What did you see?
