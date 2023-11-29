@@ -12,3 +12,5 @@ Login in the azure portal and do the tasks:
 Implement the azure backend provider in the terraform code of practice 2 with your state
 
 
+3.
+After your first apply look in your blob storage container. What did you see?
