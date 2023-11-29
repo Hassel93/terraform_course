@@ -5,7 +5,7 @@ resource "random_integer" "id" {
 
 resource "azurerm_resource_group" "rg" {
   location = "switzerlandnorth"
-  name     = "rg-${Hier sollte eine Variable stehen}-${random_integer.id.result}"
+  name     = "rg-${var.ressource_group_name}-${random_integer.id.result}"
 }
 
 

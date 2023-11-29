@@ -1,12 +1,12 @@
-1. Configure the providers.tf with your azure state
-   Integrate the azurerm provider to your provider.tf and use the working subscription
-   Tip: What is the first step after the change or the integration a provider ?
+1. Create a variables.tf and create a variable with name ressource_group_name. 
+   Use the variable as a part of the name from the ressource group.
+   Execute the plan and apply it with the value "test"
 
 2.
-   Create a resource group with the name "terraformcourse{surname}" in your subscription. Location should be "switzerlandnorth"
-   Apply your new files and execute your changes. 
-   Check if your ressource group is available in your subscription
-   
-   
-3. 
-Add a storage account with name stoterraform{surname} and use a attribute references for location and resource group name to your Resource Group
+ Create a local variable and use it for the maximum of the random int ressource
+ Choose a number from 600-1000 for the value
+ 
+3. Create a output with the name created_ressource_name and print out the finally create name of the ressource group
+
+4. Add a key vault and and write a secret in this added key vault. 
+Additionally give the object_id 7ae2ca1c-85b9-43fe-8698-7bfe23b60101 the permissions to read the secret 
