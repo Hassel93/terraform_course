@@ -9,4 +9,4 @@
 3. Create a output with the name created_ressource_name and print out the finally create name of the ressource group
 
 4. Add a key vault and and write a secret in this added key vault. 
-Additionally give the object_id 7ae2ca1c-85b9-43fe-8698-7bfe23b60101 the permissions to read the secret 
+Additionally give the object_id 7ae2 ca1c-85b9-43fe-8698-7bfe23b60101 the permissions to read the secret 

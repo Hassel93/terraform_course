@@ -1,0 +1,1 @@
+1. Use ADO and Create a Pipeline with the assets in deployment with a deployment and make a deployment

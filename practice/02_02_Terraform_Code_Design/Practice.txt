@@ -1,0 +1,12 @@
+1. Create a Terraform Solution which save the storage in your configured state
+Implement a VNET with a name that you can choose and the address_space 10.0.1.0/16
+Implement 3 Subnets which have 16 available adresses and use the first 3 options for subnets
+
+2. Implement a more general solution with iteration over arrays
+
+3. Add a role assigment on the vnet and give the object_id 7ae2ca1c-85b9-43fe-8698-7bfe23b60101 the role contributor
+
+4. Choose based on a variables with the name env the address space of the vnet. If the env is dev than use 10.0.1.0/16. 
+Otherwise use  10.0.2.0/16
+
+5. Update your solution and use cidrsubnet instead of defined subnets

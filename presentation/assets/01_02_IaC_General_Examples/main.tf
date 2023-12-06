@@ -27,7 +27,7 @@ resource "azurerm_storage_account" "storagaeaccount" {
   account_tier             = "Standard"
   location                 = "switzerlandnorth"
   name                     = "storageaccountname"
-  resource_group_name      = azurerm_resource_group.rg.name
+  resource_group_name      = "rg_test"
 }
 
 resource "azurerm_storage_container" "stcontainer" {

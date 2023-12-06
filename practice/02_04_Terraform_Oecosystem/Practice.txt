@@ -1,0 +1,5 @@
+1. Write a test for your Terraform Code from Practice 01_06. Especially that your Ressource Group is in switzerland
+
+2. Use and Produce a dependency graph with tfvisualize and with the dot command
+
+3. Optional Use tf_lint and setup it

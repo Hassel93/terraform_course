@@ -9,8 +9,11 @@ terraform {
       version = "3.82.0"
     }
   }
-  backend "local" {
-    path = "./t.state"
+  backend "azurerm" {
+    resource_group_name  = "tf_state_{surname}"
+    storage_account_name = "terraformcourse"
+    container_name       = "state"
+    key                  = "terraform.tfstate"
   }
 }
 
